@@ -15,3 +15,14 @@ export interface Payload {
   vocation: string;
   level: number;
 }
+
+export interface ILogin {
+  username: string;
+  password: string;
+}
+
+export interface ILoginPayload {
+  id: number;
+  email: string;
+  name: string;
+}
