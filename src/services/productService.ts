@@ -17,4 +17,13 @@ export default class ProductService {
       return { message: 'Erro na hora de criar produto' };
     }
   }
+
+  async getAllProducts() {
+    try {
+      const result = await this.productModel.getAllProducts();
+      return { message: result };
+    } catch (error) {
+      return { message: 'Erro na hora de pegar os produtos' };
+    }
+  }
 }
