@@ -12,4 +12,13 @@ export default class OrderService {
     const result = await this.orderModel.getAllOrders();
     return result;
   }
+
+  async createOrders(id: number, productsIds: number[]) {
+    try { 
+      const result = await this.orderModel.createOrders(id, productsIds);
+      return result;
+    } catch (error) {
+      return error;
+    }
+  }
 }
