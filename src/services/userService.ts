@@ -10,11 +10,7 @@ export default class UserService {
   }
 
   async createUser(body: IUserCreate) {
-    try {
-      const result = await this.userModel.createUser(body);
-      return { message: result };
-    } catch (error) {
-      return { message: 'Erro ao criar o usuario' };
-    }
+    const insertId = await this.userModel.createUser(body);
+    return insertId;
   }
 }

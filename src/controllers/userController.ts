@@ -7,11 +7,10 @@ export default class UserController {
 
   createUser = async (req: Request, res: Response) => {
     try {
-      await this.userService.createUser(req.body);
+      const id = await this.userService.createUser(req.body);
       const payload = {
+        id,
         username: req.body.username,
-        vocation: req.body.vocation,
-        level: req.body.vocation,
       };
       const token = createToken(payload);
       res.status(201).json({ token });
