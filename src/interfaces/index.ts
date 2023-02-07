@@ -11,9 +11,8 @@ export interface IUserCreate {
 }
 
 export interface Payload {
+  id: number;
   username: string;
-  vocation: string;
-  level: number;
 }
 
 export interface ILogin {
