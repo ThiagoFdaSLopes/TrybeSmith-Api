@@ -98,11 +98,6 @@ Foram encontradas 2 possíveis soluções para este problema:
 ```http
   GET /orders
   ```
-#### Pegar orders da loja
-
-```http
-  GET /orders
-  ```
 
 Qualquer duvida entre em contato comigo:
 
