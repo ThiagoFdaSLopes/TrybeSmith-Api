@@ -80,7 +80,7 @@ Foram encontradas 2 possíveis soluções para este problema:
 #### Criar produtos na loja
 
 ```http
-  POST /orders
+  POST /products
   ```
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
